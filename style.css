@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.boxed-80{
+  width: 80%;
+  margin: auto;
+}
+
+.boxed-90{
+  width: 90%;
+  margin: auto;
+}
+
+/* HEADER */
+

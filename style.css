@@ -2,12 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto';
-}
-
-.body{
   font-family: 'Open Sans', sans-serif;
 }
+
 
 .boxed-80{
   width: 80%;
@@ -21,10 +18,21 @@
   margin: auto;
 }
 
-header, .jumbotron, .trovapiano, .operazioni{
+header, .jumbotron, .trovapiano, .operazioni, .team{
   content: '';
   display: table;
-  clear both;
+  clear: both;
+}
+
+ol{
+    list-style: none;
+}
+
+.bottoneblu {
+  color: white;
+  background-color: #0061FE;
+  padding: 10px 40px;
+  text-decoration: none;
 }
 
 /* HEADER */
@@ -73,11 +81,8 @@ header li a{
   text-decoration: none;
 }
 
-.bottoneblu {
-  color: white;
-  background-color: #297AFE;
+header .bottoneblu{
   padding: 10px 20px;
-  text-decoration: none;
 }
 
 /* JUMBOTRON */
@@ -91,18 +96,19 @@ header li a{
   text-align: left;
   margin-top: 50px;
   margin-bottom: 30px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .boxed-90{
-  padding-top: 100px;
+  padding-top: 60px;
   margin-top: 30px;
 }
 
 .immjumbo {
   float: left;
   width: 60%;
-  margin-top: 30px;
+  margin: 0px auto -80px auto;
+  padding-left: 20px;
   
 }
 
@@ -116,24 +122,41 @@ header li a{
   width: 100%;
 }
 
+.testojumbo{
+  font-size: 18px;
+}
+
 /* TROVA IL PIANO */
 
 .trovapiano{
-  margin-top: 90px;
+  margin-top: 200px;
 }
 
 .input{
   display: inline-block;
 }
 
+.fa-arrow-down:before {
+  font-size: 40px;
+}
+
+
 /* TROVA IL PIANO TABELLE*/
 
+#titolo{
+  padding-bottom: 40px;
+}
+
+.trovapiano .input{
+  padding-bottom: 40px;
+}
 
 .colonna{
   float: left;
-  width: calc(80% / 3);
+  width: calc(90% / 3);
   border: 1px solid black;
   padding: 20px;
+  margin-bottom: 10px;
 }
 
 .colonna.due{
@@ -141,8 +164,26 @@ header li a{
 }
 
 .colonna p{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.trovapiano{
+  font-size: 22px;
+}
+
+.colonna h1, .colonna h2{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.colonna .prezzo{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.colonna ol i{
+  color: #0061FE;
 }
 
 /* ENTRA IN CONTATTO CON UN PARTNER */
@@ -173,4 +214,25 @@ header li a{
 
 .operazioni img{
   width: 100%;
+}
+
+/* BOX TEAM */
+
+.brand img{
+  width: 100%;
+}
+
+#sinistra, #centrale, #destra{
+  float: left;
+  width: calc(100%/3);
+  height: 500px;
+}
+
+#centrale{
+  background-color: grey;
+}
+
+.brand{
+  float: left;
+  width: calc(100%/2);
 }

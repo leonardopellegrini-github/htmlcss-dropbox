@@ -9,8 +9,7 @@
 .boxed-80{
   width: 80%;
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  padding-top: 100px;
 }
 
 .boxed-90{
@@ -18,14 +17,14 @@
   margin: auto;
 }
 
-header, .jumbotron, .trovapiano, .operazioni, .team{
+header, .jumbotron, .trovapiano, .operazioni, .team, #azzurro, .faq, footer{
   content: '';
   display: table;
   clear: both;
 }
 
 ol{
-    list-style: none;
+  list-style: none;
 }
 
 .bottoneblu {
@@ -188,7 +187,6 @@ header .bottoneblu{
 
 /* ENTRA IN CONTATTO CON UN PARTNER */
 
-
 #contattoimm{
   float: left;
   width: 60%;
@@ -206,6 +204,12 @@ header .bottoneblu{
 }
 
 /* ESEGUI PIù OPERAZIONI */
+
+#h1-operazioni{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .box{
   float: left;
   width: calc(100% / 3);
@@ -216,23 +220,162 @@ header .bottoneblu{
   width: 100%;
 }
 
+/* 500 TEAM */
+
+#h1-500{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 /* BOX TEAM */
 
-.brand img{
-  width: 100%;
-}
-
-#sinistra, #centrale, #destra{
-  float: left;
-  width: calc(100%/3);
-  height: 500px;
-}
-
-#centrale{
-  background-color: grey;
+.team{
+  margin-top: 85px;
 }
 
 .brand{
   float: left;
   width: calc(100%/2);
+  height: 200px;
+}
+
+.brand img{
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  filter: invert();
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#sinistra, #centrale, #destra{
+  float: left;
+  width: calc(100%/3);
+  vertical-align: middle;
+  height: 400px;
+  background-color: #0061FE;
+}
+
+#centrale{
+  background-color: #F5F5F5;
+}
+
+#design{
+  background-color: #A2D39B;
+}
+
+#arizona{
+  background-color: #61082B;
+}
+
+#florida{
+  background-color: #0093CE;
+}
+
+#topps{
+  background-color: #FF1C1C;
+}
+
+#bici{
+  background-color: #D5001F;
+}
+
+#hearts{
+  background-color: #B4D0E7;
+}
+
+#lonely{
+  background-color: #0D2481;
+}
+
+#clear{
+  background-color: #FFD830;
+}
+
+/* SEZIONE AZZURRA */
+
+#titolorosso h1{
+  color: #61082B;
+  font-size: 40px;
+}
+
+#azzurro{
+  background-color: #B4D0E7;
+  width: 100%;
+}
+
+#grigio, #titolorosso{
+  width: 50%;
+  height: 200px;
+}
+
+#titolorosso{
+  float: left;
+}
+
+#grigio{
+  float: right;
+}
+
+#grigio .bottoneblu{
+  color: black;
+  background-color: #F5F5F5;
+}
+
+/* FAQ */
+
+#h1-300{
+  margin-top: 20px;
+}
+
+.question{
+  border-top: 1px solid black;
+  padding: 20px 10px 36px 10px;
+}
+
+.question h3{
+  float: left;
+}
+
+.question p{
+  float: right;
+}
+
+/* FOOTER */
+
+footer{
+  background-color: black;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 40px;
+}
+footer h3{
+  margin-bottom: 15px;
+}
+
+.footy{
+  float: left;
+  width: calc(100% / 5);
+  text-align: left;
+  color: white;
+  min-height: 100px;
+  margin-bottom: 60px;
+}
+
+.footy a{
+  text-decoration: none;
+  color: white;
+}
+
+footer hr{
+  width: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+}
+
+footer p{
+  color: #999999
 }

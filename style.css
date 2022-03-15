@@ -34,6 +34,10 @@ ol{
   text-decoration: none;
 }
 
+.bottoneblu:hover{
+  background-color: #67a1ff;
+}
+
 /* HEADER */
 
 header{
@@ -42,6 +46,7 @@ header{
   background-color: white;
   width: 100%;
   position: fixed;
+  z-index: 999;
 }
 
 header .sx{
@@ -78,6 +83,11 @@ header li a{
   color: rgb(0, 0, 0);
   font-size: 15px;
   text-decoration: none;
+}
+
+header li a:hover{
+  padding-bottom: 38px;;
+  border-bottom: 3px solid #0061FE;
 }
 
 header .bottoneblu{
@@ -164,7 +174,7 @@ header .bottoneblu{
 
 
 .colonna.due, .colonna.top-2{
-  margin: 0px 20px auto;
+  margin: 0px 50px auto;
   margin-bottom: 0;
 }
 
@@ -174,7 +184,7 @@ header .bottoneblu{
 }
 
 .trovapiano{
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .colonna h1, .colonna h2{
@@ -187,14 +197,15 @@ header .bottoneblu{
   font-weight: 400;
 }
 
-.colonna ol i{
+.colonna ol{
+  list-style: url(img/check-solid.svg);
+}
+
+.colonna ol::marker{
   color: #0061FE;
 }
 
-.colonna > li:before{
-  content: 'fa-solid fa-building';
-  color: #006600;
-}
+/* SEZIONE SOTTO AL LISTINO */
 
 #team{
   margin-top: 20px;
@@ -263,7 +274,7 @@ header .bottoneblu{
   font-weight: 700;
 }
 
-/* 500 TEAM */
+/*TITOLO 500 TEAM */
 
 #h1-500{
   margin-top: 50px;
@@ -278,28 +289,33 @@ header .bottoneblu{
 
 .brand{
   float: left;
-  width: calc(100%/2);
-  height: 200px;
+  width: 15vw;
+  height: 15vw;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 10px;
 }
 
 .brand img{
-  width: 50%;
-  text-align: center;
-  padding: 20px;
+  width: 70%;
   filter: invert();
 }
 
-#sinistra, #centrale, #destra{
+#sinistra, #destra{
   float: left;
-  width: calc(100%/3);
+  width: 30vw;
+  height: 30vw;
   vertical-align: middle;
-  height: 400px;
   background-color: #0061FE;
 }
 
 #centrale{
+  float: left;
+  width: 38vw;
+  height: 30vw;
   background-color: #F5F5F5;
   padding: 30px;
+  line-height: 26px;
 }
 
 #centrale img{
@@ -315,34 +331,42 @@ border: 1px solid black;
 
 #design{
   background-color: #A2D39B;
+  line-height: 269px;
 }
 
 #arizona{
   background-color: #61082B;
+  line-height: 334px;
 }
 
 #florida{
   background-color: #0093CE;
+  line-height: 269px;
 }
 
 #topps{
   background-color: #FF1C1C;
+  line-height: 286px;
 }
 
 #bici{
   background-color: #D5001F;
+  line-height: 269px;
 }
 
 #hearts{
   background-color: #B4D0E7;
+  line-height: 269px;
 }
 
 #lonely{
   background-color: #0D2481;
+  line-height: 307px;
 }
 
 #clear{
   background-color: #FFD830;
+  line-height: 311px;
 }
 
 /* SEZIONE AZZURRA */

@@ -17,7 +17,7 @@
   <header>
 
     <!--SX-->
-    <div class="sx logo">
+    <div class="sx logo clearfix">
       <img src="img/logo-small.png" alt="Logo">
     </div>
     <div class="sx menu-1">
@@ -31,7 +31,7 @@
     
 
     <!--DX-->
-    <div class="dx">
+    <div class="dx clearfix">
       <ol>
         <li><a href="">Supporto</a></li>
         <li><a href="">Contatta l'ufficio</a></li>
@@ -48,7 +48,7 @@
 
     <div class="boxed-90">
 
-      <div class="titolojumbo">
+      <div class="titolojumbo clearfix">
       <h1>Tutto ciò che ti serve per il lavoro in un unico posto</h1>
       </div>
       <div class="testojumbo">
@@ -64,7 +64,7 @@
         <p><i class="fa-solid fa-arrow-down"></i></p>
       </div>
 
-      <div class="immjumbo">
+      <div class="immjumbo clearfix">
         <img src="img/jumbo.png" alt="Jumbo">
       </div>
 
@@ -76,28 +76,25 @@
   <main>
 
     <!-- TROVA IL PIANO DROPBOX-->
-    <div class="trovapiano boxed-80">
+    <div class="trovapiano boxed-80 clearfix">
     
       <!-- TITOLO Trova il piano Dropbox-->
       <div id="titolo">
         <h1>Trova il piano business che fa per te</h1>
+        <br>
+        <!--RADIO Trova il piano Dropbox-->
+        <input type="radio" id="mensile" checked>
+        <label for="mensile">Fatturazione mensile</label>
+        <input type="radio" id="annulae" unchecked>
+        <label for="annuale">Fatturazione annuale</label>
       </div>
 
       <!--RADIO Trova il piano Dropbox-->
-      <div class="input">
-      <input type="radio" id="mensile" checked>
-      <label for="mensile">Fatturazione mensile</label>
-      <input type="radio" id="annulae" unchecked>
-      <label for="annuale">Fatturazione annuale</label>
-      </div>
 
-    <!-- RIGA TABELLE-->
-    <div>
 
-      <!-- TABELLA 1-->
-      <div class="tabella">
-        
-      
+     <!-- RIGA TABELLE-->
+
+            
         <!-- TITOLO Trova il piano Dropbox-->
         <div class="colonna uno">
           <H1>Professional</H1>
@@ -130,40 +127,82 @@
             <li><i class="fa-solid fa-check"></i> Recupera i file Dropbox modificati o eliminati entro 180 giorni</li>
           </ol>
         </div>
-
-      </div>
-
-      <!-- TABELLA 2 -->
-      <div class="tabella">
       
-        <!-- TITOLO Trova il piano Dropbox-->
+        <!-- TAB 2-->
         <div class="colonna due">
           <H1>Standard</H1>
+          <br>
+          <p class="prezzo">19,99&euro;</p>
+          <br>
+          <p class="mese">mese</p>
+          <br>
+          <p class="utente">1 utente</p>
+          <br>
+          <p class="spazio">3 TB di spazio di archiviazione sicuro</p>
+          <br>
+          <p class="Funzioni">Funzioni di produttività premium e condivisione file semplice e sicura</p>
+          <br>
+          <p id="bot"><a class="bottoneblu" href="#">Prova gratis per 30 giorni</a></p>
+          <br>
+          <p>Oppure <span class="acquista">Acquista ora</span></p>
+          <br>
+          <h2>Punti salienti</h2>
+          <br>
+          <ol>
+            <li><i class="fa-solid fa-check"></i> Invia file fino a 100 GB con Dropbox Transfer</li>
+            <br>
+            <li><i class="fa-solid fa-check"></i> Cartelle disponibili offline su dispositivi mobili e pulizia remota dell'account</li>
+            <br>
+            <li><i class="fa-solid fa-check"></i> Filigrana documento</li>
+            <br>
+            <li><i class="fa-solid fa-check"></i> Assistenza prioritaria via email e chat</li>
+            <br>
+            <li><i class="fa-solid fa-check"></i> Recupera i file Dropbox modificati o eliminati entro 180 giorni</li>
+          </ol>
         </div>
 
-
-      </div>
-
-      <!-- TABELLA 3-->
-      <div class="tabella">
       
         <!-- TITOLO Trova il piano Dropbox-->
         <div class="colonna tre">
           <H1>Advance</H1>
+          <br>
+          <p class="prezzo">19,99&euro;</p>
+          <br>
+          <p class="mese">mese</p>
+          <br>
+          <p class="utente">1 utente</p>
+          <br>
+          <p class="spazio">3 TB di spazio di archiviazione sicuro</p>
+          <br>
+          <p class="Funzioni">Funzioni di produttività premium e condivisione file semplice e sicura</p>
+          <br>
+          <p id="bot"><a class="bottoneblu" href="#">Prova gratis per 30 giorni</a></p>
+          <br>
+          <p>Oppure <span class="acquista">Acquista ora</span></p>
+          <br>
+          <h2>Punti salienti</h2>
+          <br>
+          <ol>
+            <li><i class="fa-solid fa-check"></i> Invia file fino a 100 GB con Dropbox Transfer</li>
+            <br>
+            <li><i class="fa-solid fa-check"></i> Cartelle disponibili offline su dispositivi mobili e pulizia remota dell'account</li>
+            <br>
+            <li><i class="fa-solid fa-check"></i> Filigrana documento</li>
+            <br>
+            <li><i class="fa-solid fa-check"></i> Assistenza prioritaria via email e chat</li>
+            <br>
+            <li><i class="fa-solid fa-check"></i> Recupera i file Dropbox modificati o eliminati entro 180 giorni</li>
+          </ol>
         </div>
 
-      </div>
-    
     </div>
-  
-  </div>
 
     <!-- ENTRA IN CONTATTO CON UN PARTNER-->
-    <div class="boxed-80 contatto" >
+    <div class="boxed-80 contatto clearfix" >
 
       <!-- Immagine float 60-->
       <div id="contattoimm">
-
+        
       </div>
       <!-- Testo float 30-->
       <div id="contattotext">
@@ -173,11 +212,10 @@
         <br>
         <button id="trovabutton" >Trova un partner</button>
       </div>
-
     </div>
 
     <!-- ESEGUI PIù OPERAZIONI -->
-    <div  class="boxed-80 operazioni">
+    <div  class="boxed-80 operazioni clearfix">
       <h1 id="h1-operazioni">Esegui più operazioni con Dropbox Business</h1>
       <!-- Box1-->
       <div class="box">
@@ -229,9 +267,9 @@
     </div>
 
     <!-- BOX TEAM -->
-    <div class="team">
+    <div class="team clearfix">
       
-      <div id="sinistra">
+      <div class="clearfix" id="sinistra">
         <div id="design" class="brand">
           <img src="img/designit.svg" alt="logo">
         </div>
@@ -247,17 +285,19 @@
       </div>
 
       <div id="centrale">
+        <img src="img/designit.svg" alt="logo">
+        <hr>
 
       </div>
 
-      <div id="destra">
+      <div class="clearfix" id="destra">
         
         <div id="bici" class="brand">
           <img src="img/world_bicycle_relief.svg" alt="logo">
         </div>
         <div id="hearts" class="brand">
           <img src="img/hearst_corp.svg" alt="logo">
-        </div>
+        </div> 
         <div id="lonely" class="brand">
           <img src="img/lonely_planet.svg" alt="logo">
         </div>
@@ -271,7 +311,7 @@
 
     <!-- SEZIONE AZZURRA -->
     <div id="azzurro">
-      <div class="boxed-80">
+      <div class="boxed-80 clearfix">
 
         <!-- Titolo -->
         <div id="titolorosso">
@@ -294,19 +334,19 @@
     <!-- FAQ -->
     <div class="faq boxed-80">
       
-      <div class="question">
+      <div class="question clearfix">
         <h3>Differenza tra Dropbox Busines e advance?</h3>
         <p><i class="fa-solid fa-sort-down"></i></p>
       </div>
-      <div class="question">
+      <div class="question clearfix">
         <h3>Differenza tra Dropbox Busines e advance?</h3>
         <p><i class="fa-solid fa-sort-down"></i></p>
       </div>
-      <div class="question">
+      <div class="question clearfix">
         <h3>Differenza tra Dropbox Busines e advance?</h3>
         <p><i class="fa-solid fa-sort-down"></i></p>
       </div>
-      <div class="question">
+      <div class="question clearfix">
         <h3>Differenza tra Dropbox Busines e advance?</h3>
         <p><i class="fa-solid fa-sort-down"></i></p>
       </div>
@@ -319,7 +359,7 @@
   <!--FOOTER-->
   <footer>
 
-    <div class="boxed-90">
+    <div class="boxed-90 clearfix">
     <!--1-->
     <div class="footy">
       <h3>Dropbox</h3>

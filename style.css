@@ -17,7 +17,7 @@
   margin: auto;
 }
 
-header, .jumbotron, .trovapiano, .operazioni, .team, #azzurro, .faq, footer{
+.clearfix:after{
   content: '';
   display: table;
   clear: both;
@@ -88,6 +88,7 @@ header .bottoneblu{
 
 .jumbotron{
   background-color: #B4D0E7;
+  height: 700px;
 }
 
 .jumbotron h1{
@@ -98,9 +99,8 @@ header .bottoneblu{
   font-weight: 600;
 }
 
-.boxed-90{
-  padding-top: 60px;
-  margin-top: 30px;
+.titolojumbo{
+  padding-top: 90px;
 }
 
 .immjumbo {
@@ -220,6 +220,13 @@ header .bottoneblu{
   width: 100%;
 }
 
+.operazioni h4{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
 /* 500 TEAM */
 
 #h1-500{
@@ -240,13 +247,10 @@ header .bottoneblu{
 }
 
 .brand img{
-  width: 100%;
+  width: 50%;
   text-align: center;
   padding: 20px;
   filter: invert();
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 #sinistra, #centrale, #destra{
@@ -259,6 +263,18 @@ header .bottoneblu{
 
 #centrale{
   background-color: #F5F5F5;
+  padding: 30px;
+}
+
+#centrale img{
+  width: 40%;
+}
+
+#centrale hr{
+width: 5%;
+margin-top: 20px;
+margin-bottom: 20px;
+border: 1px solid black;
 }
 
 #design{
@@ -315,7 +331,8 @@ header .bottoneblu{
 }
 
 #grigio{
-  float: right;
+  float: left;
+  text-align: right;
 }
 
 #grigio .bottoneblu{
@@ -347,7 +364,7 @@ header .bottoneblu{
 footer{
   background-color: black;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 70px;
   padding-bottom: 30px;
   margin-top: 40px;
 }

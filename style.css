@@ -30,12 +30,13 @@ ol{
 .bottoneblu {
   color: white;
   background-color: #0061FE;
-  padding: 10px 40px;
+  padding: 10px 24px;
   text-decoration: none;
 }
 
 .bottoneblu:hover{
   background-color: #67a1ff;
+  border: 0;
 }
 
 /* HEADER */
@@ -90,8 +91,9 @@ header li a:hover{
   border-bottom: 3px solid #0061FE;
 }
 
-header .bottoneblu{
-  padding: 10px 20px;
+header .bottoneblu:hover{
+  padding: 10px 24px;
+  text-decoration: none;
 }
 
 /* JUMBOTRON */
@@ -162,10 +164,11 @@ header .bottoneblu{
 .colonna{
   float: left;
   width: calc(90% / 3);
-  border: 1px solid black;
+  border: 1px solid #D5D5D7;
   padding: 20px;
   margin-bottom: 0px;
 }
+
 
 .titolo, .nuovotitolo{
   text-align: center;
@@ -203,6 +206,20 @@ header .bottoneblu{
 
 .colonna ol::marker{
   color: #0061FE;
+}
+
+.acquista{
+  color: #0061FE;
+  text-decoration: underline;
+}
+
+.prezzo{
+  font-size: 18px;
+}
+
+.mese{
+  color: #808D98;
+  font-size: 18px;
 }
 
 /* SEZIONE SOTTO AL LISTINO */

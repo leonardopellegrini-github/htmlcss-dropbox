@@ -139,7 +139,6 @@ header .bottoneblu{
   font-size: 40px;
 }
 
-
 /* TROVA IL PIANO TABELLE*/
 
 #titolo{
@@ -155,11 +154,18 @@ header .bottoneblu{
   width: calc(90% / 3);
   border: 1px solid black;
   padding: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
-.colonna.due{
+.titolo, .nuovotitolo{
+  text-align: center;
+  padding: 10px;
+}
+
+
+.colonna.due, .colonna.top-2{
   margin: 0px 20px auto;
+  margin-bottom: 0;
 }
 
 .colonna p{
@@ -185,6 +191,30 @@ header .bottoneblu{
   color: #0061FE;
 }
 
+.colonna > li:before{
+  content: 'fa-solid fa-building';
+  color: #006600;
+}
+
+#team{
+  margin-top: 20px;
+}
+
+.nuovasez, .nuovotitolo{
+  border: 1px solid black;
+}
+
+.nuovasez{
+  padding: 20px;
+}
+
+#enterprise{
+  float: left;
+}
+
+#enterbutton{
+  float: right;
+}
 /* ENTRA IN CONTATTO CON UN PARTNER */
 
 #contattoimm{
@@ -201,6 +231,12 @@ header .bottoneblu{
   padding: 30px;
   float: left;
   width: 40%;
+}
+
+#trovabutton{
+  background-color: white;
+  border: 2px solid black;
+  padding: 10px;
 }
 
 /* ESEGUI PIù OPERAZIONI */
